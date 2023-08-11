@@ -1,6 +1,6 @@
 # Flask REST API Star Wars 🌌
 
-¡Bienvenido a Flask REST API Star Wars! Este proyecto fue desarrollado durante mi participación en el Bootcamp "Full Stack Web Developer" en 4Geeks Academy. El objetivo principal de este proyecto fue aprender a crear una API REST utilizando el framework Flask. A través de esta experiencia educativa, he tenido la oportunidad de explorar la creación de APIs web robustas y eficientes utilizando Flask y otras tecnologías asociadas.
+¡Bienvenido a Flask REST API Star Wars! Este proyecto fue desarrollado durante mi participación en el Bootcamp "Full Stack Web Developer" en 4Geeks Academy. 
 
 ## Descripción del Proyecto 📚
 
