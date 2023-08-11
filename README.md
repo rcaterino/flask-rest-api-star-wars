@@ -1,74 +1,76 @@
-# Flask Boilerplate for Profesional Development
+# Flask REST API Star Wars 🌌
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
-<p align="center">
-    <a href="https://youtu.be/ORxQ-K3BzQA"><img height="200px" src="https://github.com/4GeeksAcademy/flask-rest-hello/blob/main/docs/assets/how-to.png?raw=true?raw=true" /></a>
-</p>
+¡Bienvenido a Flask REST API Star Wars! Este proyecto fue desarrollado durante mi participación en el Bootcamp "Full Stack Web Developer" en 4Geeks Academy. El objetivo principal de este proyecto fue aprender a crear una API REST utilizando el framework Flask. A través de esta experiencia educativa, he tenido la oportunidad de explorar la creación de APIs web robustas y eficientes utilizando Flask y otras tecnologías asociadas.
 
-## Features
+## Descripción del Proyecto 📚
 
-- Extensive documentation [here](https://start.4geeksacademy.com).
-- Integrated with Pipenv for package managing.
-- Fast deloyment to heroku with `$ pipenv run deploy`.
-- Use of `.env` file.
-- SQLAlchemy integration for database abstraction.
+Flask REST API Star Wars es un proyecto educativo creado como parte del Bootcamp "Full Stack Web Developer" en 4Geeks Academy. El propósito de este proyecto fue adquirir conocimientos y habilidades en la creación de APIs REST utilizando el framework Flask. A través de la implementación de esta API, he aprendido sobre la estructura de una API, la definición de rutas, la gestión de bases de datos, la serialización de datos y otros conceptos esenciales para el desarrollo de APIs web profesionales.
 
-## Installation (automatic if you are using gitpod)
+## Características y Recursos 🔥
 
-> Important: The boiplerplate is made for python 3.7 but you can easily change the `python_version` on the Pipfile.
+- Documentación detallada disponible en [este enlace](https://start.4geeksacademy.com).
+- Integración con Pipenv para la gestión de paquetes.
+- Despliegue rápido en Heroku con `$ pipenv run deploy`.
+- Uso del archivo `.env` para variables de entorno.
+- Integración de SQLAlchemy para la abstracción de bases de datos.
 
-The following steps are automatically runned withing gitpod, if you are doing a local installation you have to do them manually:
+## Instrucciones de Instalación (automático en Gitpod)
+
+> Importante: El proyecto está configurado para Python 3.7, pero puedes modificar la `python_version` en el Pipfile.
+
+Los siguientes pasos se ejecutan automáticamente en Gitpod. Si realizas una instalación local, deberás realizarlos manualmente:
 
 ```sh
 pipenv install;
-mysql -u root -e "CREATE DATABASE example";
+mysql -u root -e "CREATE DATABASE ejemplo";
 pipenv run init;
 pipenv run migrate;
 pipenv run upgrade;
 ```
 
-## How to Start coding?
+## ¿Cómo Empezar a Codificar?
 
-There is an example API working with an example database. All your application code should be written inside the `./src/` folder.
+Existe una API de ejemplo que funciona con una base de datos de ejemplo. Todo tu código de aplicación debe escribirse dentro de la carpeta `./src/`.
 
-- src/main.py (it's where your endpoints should be coded)
-- src/models.py (your database tables and serialization logic)
-- src/utils.py (some reusable classes and functions)
-- src/admin.py (add your models to the admin and manage your data easily)
+- `src/main.py` (aquí se deben codificar los endpoints)
+- `src/models.py` (definición de tablas de la base de datos y lógica de serialización)
+- `src/utils.py` (clases y funciones reutilizables)
+- `src/admin.py` (agrega tus modelos al panel de administración para gestionar los datos)
 
-For a more detailed explanation, look for the tutorial inside the `docs` folder.
+Para obtener una explicación más detallada, consulta el tutorial dentro de la carpeta `docs`.
 
-## Remember to migrate every time you change your models
+## Recuerda Realizar Migraciones cuando Cambies los Modelos
 
-You have to migrate and upgrade the migrations for every update you make to your models:
+Debes realizar migraciones y actualizar las migraciones cada vez que realices cambios en los modelos:
 ```
-$ pipenv run migrate (to make the migrations)
-$ pipenv run upgrade  (to update your databse with the migrations)
+$ pipenv run migrate (para realizar las migraciones)
+$ pipenv run upgrade  (para actualizar la base de datos con las migraciones)
 ```
 
+# Instalación Manual para Ubuntu y Mac
 
-# Manual Installation for Ubuntu & Mac
-
-⚠️ Make sure you have `python 3.6+` and `MySQL` installed on your computer and MySQL is running, then run the following commands:
+⚠️ Asegúrate de tener `Python 3.6+` y `MySQL` instalados en tu computadora y que MySQL esté en ejecución. Luego, ejecuta los siguientes comandos:
 ```sh
-$ pipenv install (to install pip packages)
-$ pipenv run migrate (to create the database)
-$ pipenv run start (to start the flask webserver)
+$ pipenv install (para instalar paquetes de pip)
+$ pipenv run migrate (para crear la base de datos)
+$ pipenv run start (para iniciar el servidor web Flask)
 ```
 
+## Despliegue en Heroku
 
-## Deploy to Heroku
-
-This template is 100% compatible with Heroku[https://www.heroku.com/], just make sure to understand and execute the following steps:
+Este template es 100% compatible con Heroku, solo asegúrate de comprender y ejecutar los siguientes pasos:
 
 ```sh
-// Install heroku
+// Instala heroku
 $ npm i heroku -g
-// Login to heroku on the command line
+// Inicia sesión en heroku en la línea de comandos
 $ heroku login -i
-// Create an application (if you don't have it already)
-$ heroku create <your_application_name>
-// Commit and push to heroku (commited your changes)
+// Crea una aplicación (si aún no la tienes)
+$ heroku create <nombre_de_tu_aplicacion>
+// Hace commit y envía a heroku (sube tus cambios)
 $ git push heroku main
 ```
-:warning: For a more detailed explanation on working with .env variables or the MySQL database [read the full guide](https://start.4geeksacademy.com/backend/deploy-heroku-mysql).
+
+:warning: Para obtener una explicación más detallada sobre cómo trabajar con variables `.env` o la base de datos MySQL, [lee la guía completa](https://start.4geeksacademy.com/backend/deploy-heroku-mysql).
+
+¡Espero que disfrutes explorando y aprendiendo con Flask REST API Star Wars! 🚀
